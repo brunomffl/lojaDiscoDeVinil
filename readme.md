@@ -17,7 +17,7 @@ Um projeto front-end para uma loja fictícia de discos de vinil. Desenvolvido pa
 
 ## 📷 Imagens
 
-![Preview da página inicial](./assets/imgs/gifDoProjeto.gif) 
+![Preview da página inicial](./images/gifDoProjeto.gif) 
 
 ## 📦 Como rodar o projeto localmente
 
