@@ -13,6 +13,7 @@ Um projeto front-end para uma loja fictícia de discos de vinil. Desenvolvido pa
 - Exibição de produtos (discos de vinil)
 - Sistema de carrinho de compras
 - Permite adicionar novos produtos
+- Produtos adicionados ficam salvos no localStorage
 - Navegação simples entre seções
 
 ## 📷 Imagens
