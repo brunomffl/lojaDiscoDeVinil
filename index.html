@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Vinyl Store</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- classe modelo, clonamos ela INTEIRA no javascript e passamos ela para dentro de album-area -->
+    <div class="models">
+        <div class="album-item">
+            <a href="">
+                <div class="album-item--img"><img src="" /></div>
+                <div class="album-item--add">+</div>
+            </a>
+            <div class="album-item--price">$ --</div>
+            <div class="album-item--name">--</div>
+            <div class="album-item--desc">--</div>
+        </div>
+        <div class="cart--item">
+            <img src="" />
+            <div class="cart--item-nome">--</div>
+            <div class="cart--item--qtarea">
+                <button class="cart--item-qtmenos">-</button>
+                <div class="cart--item--qt">1</div>
+                <button class="cart--item-qtmais">+</button>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="menu-openner"><span>0</span>🛒</div>
+    </header>
+    <main>
+        <div class="header">
+            <h1>Vinyl</h1>
+            <button id="buttonAdd">Add album</button>
+        </div>
+        <div class="addalbum">
+            <div class="albumcoveradded">
+                <img src="" alt="">
+            </div>
+            <form>
+                <input type="file" class="albumCover">      
+                <input type="text" class="albumName" placeholder="Product name" required>
+                <input type="number" class="price" placeholder="Product price" required>
+                <textarea class="description" placeholder="Product description" required></textarea>
+                <div class="buttons">
+                    <input type="submit" class='confirm' value="Confirm">
+                    <input type="submit" class="cancel" value="Cancel">
+                </div>
+            </form>
+        </div>
+        <div class="album-area"></div>
+    </main>
+    <aside>
+        <div class="cart--area">
+            <div class="menu-closer">❌</div>
+            <h1>Your cart</h1>
+            <div class="cart"></div>
+            <div class="cart--details">
+                <div class="cart--totalitem subtotal">
+                    <span>Total without discount</span>
+                    <span>$ --</span>
+                </div>
+                <div class="cart--totalitem desconto">
+                    <span>Discount (-10%)</span>
+                    <span>$ --</span>
+                </div>
+                <div class="cart--totalitem total big">
+                    <span>Total</span>
+                    <span>$ --</span>
+                </div>
+                <div class="cart--finalizar">Go to payment</div>
+            </div>
+        </div>
+    </aside>
+    <div class="albumWindowArea">
+        <div class="albumWindowBody">
+            <div class="albumInfo--cancelMobileButton">Go back</div>
+            <div class="albumBig">
+                <img src="" />
+            </div>
+            <div class="albumInfo">
+                <h1>--</h1>
+                <div class="albumInfo--desc">--</div>
+                <div class="albumInfo--sizearea">
+                    <div class="albumInfo--sector">Format</div>
+                    <div class="albumInfo--sizes">
+                        <div data-key="0" class="albumInfo--size">CD <span>--</span></div>
+                        <div data-key="1" class="albumInfo--size selected">Vinyl <span>--</span></div>
+                        <div data-key="2" class="albumInfo--size">Digital <span>--</span></div>
+                    </div>
+                </div>
+                <div class="albumInfo--pricearea">
+                    <div class="albumInfo--sector">Price</div>
+                    <div class="albumInfo--price">
+                        <div class="albumInfo--actualPrice">$ --</div>
+                        <div class="albumInfo--qtarea">
+                            <button class="albumInfo--qtmenos">-</button>
+                            <div class="albumInfo--qt">1</div>
+                            <button class="albumInfo--qtmais">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="albumInfo--addButton">Add to cart</div>
+                <div class="albumInfo--cancelButton">Cancel</div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="albums.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
